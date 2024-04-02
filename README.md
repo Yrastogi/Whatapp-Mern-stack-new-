@@ -1,183 +1,61 @@
-# Whatsapp Clone - Fullstack Project
+# WhatsApp Clone - Frontend
 
-A MERN application for basic Whatsapp Clone.
-
-
-## Table of Contents
-
-- [Features](#features)
-- [Tools and Technologies](#tools-and-technologies)
-- [Dependencies](#dependencies)
-- [Dev-dependencies](#dev-dependencies)
-- [Prerequisites](#prerequisites)
-- [Installation and setup](#installation-and-setup)
-- [Backend API](#backend-api)
-- [frontend pages](#frontend-pages)
-- [npm scripts](#npm-scripts)
-- [Useful Links](#useful-links)
-- [Contact](#contact)
-
-## Features
-
-### User-side features
-
-- Signup
-- Login
-- Logout
-- Add tasks
-- View tasks
-- Update tasks
-- Delete tasks
-
-### Developer-side features
-
-- Toasts for success and error messages
-- Form validations in frontend and backend
-- Fully Responsive Navbar
-- Token based Authentication
-- Use of 404 page for wrong urls
-- Relevant redirects
-- Global user state using Redux
-- Custom Loaders
-- Use of layout component for pages
-- Use of theme colors
-- No external CSS files needed (made using Tailwind CSS)
-- Usage of Tooltips
-- Dynamic document titles
-- Redirect to previous page after login
-- Use of various React hooks
-- Custom hook also used (useFetch)
-- Routes protection
-- Middleware for verifying the user in backend
-- Use of different HTTP status codes for sending responses
-- Standard pratices followed
+This project aims to develop a WhatsApp Clone frontend using ReactJS with Socket.IO for real-time communication. The application will replicate the functionality and user interface of WhatsApp, allowing users to send and receive messages in real-time.
 
 ## Tools and Technologies
 
-- HTML
-- CSS
-- Javascript
-- Tailwind CSS
-- Node.js
-- Express.js
-- React
-- Redux
-- Mongodb
+- ReactJS: JavaScript library for building user interfaces.
+- Socket.IO: Library for real-time web applications enabling bidirectional communication between clients and servers.
+- npm/yarn: Package managers for installing and managing project dependencies.
+- Visual Studio Code/Sublime Text/Atom: Code editors for writing and editing code.
+- Git: Version control system for tracking changes to the project.
 
-## Dependencies
+## Steps to Develop Frontend
 
-Following are the major dependencies of the project:
+1. **Setup React App:**
+   - Initialize a new React app using Create React App or any other boilerplate.
 
-- axios
-- react
-- react-dom
-- react-redux
-- react-router-dom
-- react-toastify
-- redux
-- redux-thunk
-- bcrypt
-- cors
-- dotenv
-- express
-- jsonwebtoken
-- mongoose
+2. **Install Dependencies:**
+   - Install necessary dependencies like Socket.IO client.
 
-## Dev-dependencies
+3. **Create Components:**
+   - Create React components for different parts of the WhatsApp interface.
 
-Following are the major dev-dependencies of the project:
+4. **Set Up Socket.IO Connection:**
+   - Establish a Socket.IO connection with the backend server.
 
-- nodemon
-- concurrently
+5. **Design User Interface:**
+   - Use CSS frameworks like Bootstrap or Material-UI to style the components.
 
-## Prerequisites
+6. **Implement Features:**
+   - Create features like sending and receiving messages, displaying online/offline status, etc.
 
-- Node.js must be installed on the system.
-- You should have a MongoDB database.
-- You should have a code editor (preferred: VS Code)
+7. **Test and Debug:**
+   - Test the application thoroughly to ensure all features are working as expected.
 
-## Installation and Setup
+8. **Optimize Performance:**
+   - Optimize the application for performance by minimizing unnecessary renders and optimizing network requests.
 
-1. Install all the dependencies
+9. **Deployment:**
+   - Deploy the frontend application to a hosting platform like Netlify, Vercel, or Heroku.
 
-   ```sh
-   npm run install-all
-   ```
+10. **Continuous Integration/Continuous Deployment (CI/CD):**
+    - Set up CI/CD pipelines to automate the build, test, and deployment process.
 
-2. Create a file named ".env" inside the backend folder. Add data from .env.example file and substitute your credentials there.
+## Getting Started
 
-3. Start the application
+To get started with development, follow these steps:
 
-   ```sh
-   npm run dev
-   ```
+1. Clone the repository:
 
-4. Go to http://localhost:3000
+2. Navigate to the frontend directory:
 
-## Backend API
+3. Install dependencies:
 
-<pre>
-- POST     /api/auth/signup
-- POST     /api/auth/login
-- GET      /api/tasks
-- GET      /api/tasks/:taskId
-- POST     /api/tasks
-- PUT      /api/tasks/:taskId
-- DELETE   /api/tasks/:taskId
-- GET      /api/profile
-</pre>
+4. Start the development server:
 
-## Frontend pages
+## Contributing
 
-<pre>
-- /                 Home Screen (Public home page for guests and private dashboard (tasks) for logged-in users)
-- /signup           Signup page
-- /login            Login page
-- /tasks/add        Add new task
-- /tasks/:taskId    Edit a task
-</pre>
+Contributions are welcome! Feel free to open issues or submit pull requests to help improve this project.
+.
 
-## npm scripts
-
-At root:
-
-- `npm run dev`: Starts both backend and frontend
-- `npm run dev-server`: Starts only backend
-- `npm run dev-client`: Starts only frontend
-- `npm run install-all`: Installs all dependencies and dev-dependencies required at root, at frontend and at backend.
-
-Inside frontend folder:
-
-- `npm start`: Starts frontend in development mode
-- `npm run build`: Builds the frontend for production to the build folder
-- `npm test`: Launches the test runner in the interactive watch mode
-- `npm run eject`: This will remove the single build dependency from the frontend.
-
-Inside backend folder:
-
-- `npm run dev`: Starts backend using nodemon.
-- `npm start`: Starts backend without nodemon.
-
-## Useful Links
-
-- This project
-
-  - Github Repo:(https://github.com/Yrastogi/Whatapp-Mern-stack-new-))
-
-- Official Docs
-
-  - Reactjs docs: https://reactjs.org/docs/getting-started.html
-  - npmjs docs: https://docs.npmjs.com/
-  - Mongodb docs: https://docs.mongodb.com/manual/introduction/
-  - Github docs: https://docs.github.com/en/get-started/quickstart/hello-world
-
-- Download links
-
-  - Nodejs download: https://nodejs.org/
-  - VS Code download: https://code.visualstudio.com/
-
-
-## Contact
-
-- Email: yash.rastogi.cse@gmail.com
-- Linkedin: https://www.linkedin.com/in/yash-rastogi-131616220/
